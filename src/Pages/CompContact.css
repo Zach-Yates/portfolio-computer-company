@@ -1,0 +1,84 @@
+.comp-contact{
+
+}
+
+.comp-contact-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.comp-contact-main h1{
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.comp-contact-form{
+    margin-bottom: 50px;
+    min-width: 500px;
+    --bgcolor: rgb(207, 207, 207);
+}
+
+
+.comp-contact-form .top, .comp-contact-form .mid{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.comp-contact-form .bottom{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;  
+    width: 100%;
+    margin: 10px 5px;
+
+}
+
+.comp-contact-form .firstname, .comp-contact-form .lastname, .comp-contact-form .number, .comp-contact-form .email{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 5px;
+    flex: 1 1 50%;
+
+}
+
+.comp-contact-form input{
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    background: rgb(239, 239, 239);
+    border: solid var(--bgcolor);
+}
+
+.comp-contact-form textarea{
+    width: 100%;
+    resize: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+    background: rgb(239, 239, 239);
+    border: solid var(--bgcolor);
+    margin-bottom: 30px;
+}
+
+.comp-contact-form .submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp-contact-form input:focus, .comp-contact-form textarea:focus{
+    outline-color: black;
+}
+
+.comp-contact-form button{
+    width: 150px;
+    height: 75px;
+    background: white;
+
+    font-size: 1.5rem;
+}
+

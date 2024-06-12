@@ -1,0 +1,17 @@
+.comp-about-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.comp-about-main p{
+    max-width: 50%;
+    padding: 20px 0px;
+    font-weight: 200;
+}
+
+.comp-about-main .location{
+    width: 50%;
+    margin: 50px 0px;
+}

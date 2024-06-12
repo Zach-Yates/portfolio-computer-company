@@ -1,0 +1,43 @@
+.comp-products{
+    
+}
+
+.iphone-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.iphone-container .title{
+    /* background: rgb(204, 204, 204); */
+    grid-area: 1/2/4/11;
+}
+
+.iphone-container .gallery{
+    background: rgb(165, 165, 165);
+    grid-area: 4/2/16/11;
+}
+
+.iphone-container .model{
+    /* background: rgb(126, 126, 126); */
+    grid-area: 1/11/7/15;
+}
+
+.iphone-container .finish{
+    /* background: rgb(211, 211, 211); */
+    grid-area: 7/11/10/15;
+}
+
+.iphone-container .storage{
+    background: rgb(94, 94, 94);
+    grid-area: 10/11/16/15;
+}
+
+
+@media(max-width: 1000px){
+    .iphone-container .model{
+        /* grid-column-start: 8; */
+    }
+}

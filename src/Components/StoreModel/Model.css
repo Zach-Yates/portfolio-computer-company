@@ -1,0 +1,73 @@
+.model{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.model h2 span{
+    color: rgb(179, 179, 179);
+}
+
+.model .left, .model .right{
+    margin: 10px;
+}
+
+.model-button, .help-button{
+    width: 328px;
+    height: 84px;
+    border-radius: 10px;
+}
+
+.model .left h3{
+    margin-bottom: 5px;
+}
+
+.model .left p{
+    margin-bottom: 10px;
+}
+
+.model .right{
+    width: 25%;
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+.model-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    border:solid rgb(174, 174, 174);
+}
+
+.model-button:focus{
+    border:solid rgb(0, 115, 255);
+}
+
+.help-button{
+    background: rgb(242, 242, 242);
+    border: none;
+}
+
+
+.help-button .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 10px 0px 10px;
+}
+
+.help-button .top h3{
+    margin: 0;
+    font-weight: 500;
+    font-size: .9rem;
+    color: rgb(56, 56, 56);
+}
+
+.help-button p{
+    text-align: left;
+    margin: 0px 10px 10px 10px;
+    font-size: .9rem;
+    color: rgb(125, 125, 125);
+}

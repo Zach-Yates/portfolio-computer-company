@@ -1,0 +1,35 @@
+.iphone-container .title h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 5px 0px 10px 5px;
+}
+
+.iphone-container .price-compare{
+    display: flex;
+}
+
+.iphone-container .price-item{
+    display: flex;
+    margin: 5px 5px;
+}
+
+.iphone-container .apple{
+    background: red;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.iphone-container .compco{
+    background: rgb(0, 196, 46);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.price-item p{
+    display: flex;
+    margin: 0px 5px;
+    padding: 5px 5px 5px 0px;
+    font-weight: 200;
+}
