@@ -30,6 +30,7 @@
     font-weight: 200;
     margin: 0px 25px;
     list-style: none;
+    border-radius: 0%;
 }
 
 .burger-icon{
@@ -45,14 +46,20 @@
 
         width: 50%;
         background-color: rgb(246, 246, 246);
+        z-index: 11;
     }
 
-    .comp-nav  li{
-        text-align: center;
-        display: block;
-        margin: 20px 0px;
+    .comp-nav li{
+        margin: 30px 0px;
         padding-bottom: 30px;
         border-bottom: solid rgb(233, 233, 233) 1px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .comp-nav ul{
+        display: block;
+        width: 50%;
     }
 
     .burger-icon{
@@ -61,6 +68,7 @@
         height: 30px;
         color:rgb(67, 111, 255);
         margin: 20px 0px;
+        cursor: pointer;
     }
 
     .hide-menu{

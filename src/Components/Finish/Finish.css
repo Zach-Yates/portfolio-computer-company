@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: left;
 }
 
 .color-selectors{
     display: flex;
 }
+
 
 
 .finish .color-text, .finish .color-selectors{

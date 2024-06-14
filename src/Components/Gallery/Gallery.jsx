@@ -1,14 +1,14 @@
 import React,{useState,useEffect} from 'react'
 import './Gallery.css'
-import nt1 from '../../assets/b-nt-1.webp'
-import nt2 from '../../assets/b-nt-2.webp'
-import nt3 from '../../assets/b-nt-3.webp'
-import nt4 from '../../assets/b-nt-4.webp'
+
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import Indicator from '../Indicator/Indicator'
 
-const Gallery = () => {
+import SlideItems from '../SlideItems/SlideItems';
+
+
+const Gallery = ({finish,activeIndex}) => {
 
   const [sliderIndex,setSliderIndex] = useState(0);
 
@@ -49,24 +49,7 @@ const Gallery = () => {
         <button className='back' onClick={slideBackward}><IoIosArrowBack size={"40px"} fill='grey'/></button>
       </div>
 
-
-      <div className="slider">
-        <div className="slide-item">
-          <img src={nt1} ></img>
-        </div>
-
-        <div className="slide-item">
-          <img src={nt2} ></img>
-        </div>
-
-        <div className="slide-item">
-          <img src={nt3} ></img>
-        </div>
-
-        <div className="slide-item">
-          <img src={nt4} ></img>
-        </div>
-      </div>
+      <SlideItems finish={finish} activeIndex={activeIndex}/>
 
       <div className="indicators">
         <Indicator currentIndex={sliderIndex} myIndex={0}/>

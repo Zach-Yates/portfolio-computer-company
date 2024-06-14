@@ -3,11 +3,14 @@ import './Model.css'
 import { CiCirclePlus } from "react-icons/ci";
 import ModelButton from '../ModelButton/ModelButton';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import { IconContext } from 'react-icons';
 
 
-const Model = () => {
+const Model = ({activeIndex,setActiveIndex}) => {
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const HandleClick =()=>{
+    // console.log("click");
+  }
 
   return (
     <div className='model'>
@@ -18,11 +21,11 @@ const Model = () => {
       <ModelButton isActive={activeIndex === 1} model={"iPhone 15 Pro Max"} display={"6.7-inch display'"} click={()=>setActiveIndex(1)}/>
 
       <div className='button-container'>
-          <button className='help-button'>
+          <button className='help-button' onClick={HandleClick}>
 
           <div className="top">
               <h3>Need help choosing a model?</h3>
-              <CiCirclePlus className='icon'/>
+              <CiCirclePlus />
           </div>
           <p>Explore the differences in screen size and battery life.</p>
 

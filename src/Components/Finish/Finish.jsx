@@ -7,11 +7,11 @@ import black_titanium from '../../assets/black-titanium.jpeg'
 import FinishSelector from '../FinishSelector/FinishSelector'
 import SectionTitle from '../SectionTitle/SectionTitle'
 
-const Finish = () => {
+const Finish = ({finish,setFinish,finishes}) => {
 
-    const finishes = ['Natural Titanium','Blue Titanium', 'White Titanium', 'Black Titanium'];
+    // const finishes = ['Natural Titanium','Blue Titanium', 'White Titanium', 'Black Titanium'];
 
-    const [finish,setFinish] = useState(finishes[0]);
+    // const [finish,setFinish] = useState(finishes[0]);
     const [potentialFinish,setPotentialFinish] = useState(finishes[0]);
 
     const HandleMouseOver = (number) =>{

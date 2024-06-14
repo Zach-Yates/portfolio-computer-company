@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Products.css'
 import CompNav from '../Components/Navbar/CompNav'
 import CompFooter from '../Components/Footer/CompFooter'
@@ -10,9 +10,14 @@ import Storage from '../Components/Storage/Storage';
 
 const Products = () => {
 
+  const finishes = ['Natural Titanium','Blue Titanium', 'White Titanium', 'Black Titanium'];
 
+  const [finish,setFinish] = useState(finishes[0]);
 
-  
+  const [activeIndex, setActiveIndex] = useState(0);
+
+ const [capacity,setCapacity] = useState(1);
+
   return (
 
     <div className='comp-products'>
@@ -23,15 +28,15 @@ const Products = () => {
 
         <div className="iphone-container">
 
-          <Title/>
+          <Title activeIndex={activeIndex} capacity={capacity}/>
 
-          <Gallery/>
+          <Gallery finish={finish} activeIndex={activeIndex}/>
 
-          <Model/>
+          <Model activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
 
-          <Finish/>
+          <Finish finish={finish} setFinish={setFinish} finishes={finishes}/>
 
-          <Storage/>
+          <Storage capacity={capacity} setCapacity={setCapacity}/>
 
         </div>
       </div>
