@@ -7,6 +7,12 @@
     background: rgb(240, 240, 240);
 }
 
+.comp-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .comp-nav .home,.comp-nav li{
     color: rgb(67, 111, 255);
 }
@@ -23,6 +29,7 @@
 .comp-nav li{
     font-weight: 200;
     margin: 0px 25px;
+    list-style: none;
 }
 
 .burger-icon{

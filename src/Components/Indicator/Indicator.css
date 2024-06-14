@@ -1,0 +1,19 @@
+.indicator{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: rgb(170, 170, 170);
+    margin: 0px 10px;
+}
+
+.indicator-active{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: black;
+    margin: 0px 10px;
+}
+
+/* .i-active{
+    background: black;
+} */

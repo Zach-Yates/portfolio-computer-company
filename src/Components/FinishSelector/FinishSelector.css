@@ -1,0 +1,32 @@
+li{
+    width: 36px;
+    height: 36x;
+    border-radius: 100%;
+    margin: 4px 5px 4px 0px;
+    list-style: none;
+}
+
+button{
+    overflow: hidden;
+    padding: 0;
+    width: 36px;
+    height:36px;
+    border-radius: 100%;
+    position: absolute;
+    border: none;
+    background-color: white;
+}
+
+.blue-border{
+    outline: solid blue;
+}
+
+.selector-img{
+    position: relative;
+    top: 2px;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}

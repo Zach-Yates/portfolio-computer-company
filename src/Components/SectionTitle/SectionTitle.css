@@ -1,0 +1,13 @@
+.section-title{
+    width: 328px;
+    margin: 0px 75px;
+}
+
+.section-title h2{
+    font-size: 24px;
+}
+
+.section-title .sub{
+    color: rgb(179, 179, 179);
+}
+

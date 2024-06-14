@@ -2,13 +2,17 @@ import React from 'react'
 import './Products.css'
 import CompNav from '../Components/Navbar/CompNav'
 import CompFooter from '../Components/Footer/CompFooter'
-import Model from '../Components/StoreModel/Model';
+import Model from '../Components/Model/Model';
 import Title from '../Components/Title/Title';
 import Finish from '../Components/Finish/Finish';
 import Gallery from '../Components/Gallery/Gallery';
 import Storage from '../Components/Storage/Storage';
 
 const Products = () => {
+
+
+
+  
   return (
 
     <div className='comp-products'>

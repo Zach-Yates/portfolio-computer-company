@@ -1,0 +1,32 @@
+.model-button{
+    width: 328px;
+    height: 84px;
+    border-radius: 10px;
+}
+
+.model-button .left h3{
+    margin-bottom: 5px;
+}
+
+.model-button .left p{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.model-button .right{
+    width: 25%;
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+.model-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    border:solid rgb(174, 174, 174);
+}
+
+.active{
+    border:solid rgb(0, 115, 255);
+}

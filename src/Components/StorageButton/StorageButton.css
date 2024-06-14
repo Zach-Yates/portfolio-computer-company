@@ -1,0 +1,29 @@
+.storage-button{
+    display: flex;
+    align-items: center;
+
+    width: 328px;
+    height: 84px;
+    border-radius: 10px;
+
+    background: rgb(255, 255, 255);
+    border:solid rgb(174, 174, 174);
+
+    margin-bottom: 10px;
+}
+
+.storage-space{
+    margin-left: 15px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.storage-postfix{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 2px;
+}
+
+.active{
+    border:solid rgb(0, 115, 255);
+}
