@@ -6,10 +6,10 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { IconContext } from 'react-icons';
 
 
-const Model = ({activeIndex,setActiveIndex}) => {
+const Model = ({activeIndex,setActiveIndex,setHelping}) => {
 
   const HandleClick =()=>{
-    // console.log("click");
+    setHelping(true);
   }
 
   return (

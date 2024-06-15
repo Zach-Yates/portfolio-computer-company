@@ -7,6 +7,7 @@ import Title from '../Components/Title/Title';
 import Finish from '../Components/Finish/Finish';
 import Gallery from '../Components/Gallery/Gallery';
 import Storage from '../Components/Storage/Storage';
+import Help from '../Components/Help/Help';
 
 const Products = () => {
 
@@ -17,6 +18,8 @@ const Products = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
  const [capacity,setCapacity] = useState(1);
+
+ const [helping,setHelping] = useState(false);
 
   return (
 
@@ -32,7 +35,7 @@ const Products = () => {
 
           <Gallery finish={finish} activeIndex={activeIndex}/>
 
-          <Model activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
+          <Model activeIndex={activeIndex} setActiveIndex={setActiveIndex} setHelping={setHelping}/>
 
           <Finish finish={finish} setFinish={setFinish} finishes={finishes}/>
 
@@ -40,6 +43,7 @@ const Products = () => {
 
         </div>
       </div>
+      <Help helping={helping} setHelping={setHelping}/>
       <CompFooter/>
     </div>
   )
