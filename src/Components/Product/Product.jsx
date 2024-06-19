@@ -30,7 +30,7 @@ const Product = ({phone}) => {
 
           <Title models={phone.models} activeIndex={activeIndex} capacity={capacity}/>
 
-          <Gallery finish={finish} activeIndex={activeIndex}/>
+          <Gallery finish={finish} activeIndex={activeIndex} finishes={finishes} images={phone.images}/>
 
           <Model models={phone.models} activeIndex={activeIndex} setActiveIndex={setActiveIndex} setHelping={setHelping}/>
 

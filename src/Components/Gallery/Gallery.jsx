@@ -8,7 +8,7 @@ import Indicator from '../Indicator/Indicator'
 import SlideItems from '../SlideItems/SlideItems';
 
 
-const Gallery = ({finish,activeIndex}) => {
+const Gallery = ({finish,activeIndex, finishes,images}) => {
 
   const [sliderIndex,setSliderIndex] = useState(0);
 
@@ -16,9 +16,26 @@ const Gallery = ({finish,activeIndex}) => {
       document.documentElement.style.setProperty('--slider-index',sliderIndex);
   },[sliderIndex])
 
+  const indicators = [];
+
+  let picIndex = 0;
+
+    finishes.forEach(color => {
+        if(finish.name == color.name){
+        picIndex = color.imageIndexes[activeIndex];
+    }});
+
+    let pics = images[picIndex];
+    let imageArray = Object.values(images[picIndex]);
+
+
+    for(let i = 0; i< imageArray.length ; i++){
+        indicators.push(<Indicator currentIndex={sliderIndex} myIndex={i} key={i}/>)
+    }
+
 
   const slideForward = ()=>{
-      if(sliderIndex != 3){
+      if(sliderIndex != imageArray.length -1){
           setSliderIndex(cur =>{
               return cur + 1;
           });
@@ -36,10 +53,12 @@ const Gallery = ({finish,activeIndex}) => {
           });
       }else{
           setSliderIndex(cur =>{
-              return cur = 3;
+              return cur = imageArray.length - 1;
           });
       }
   };
+
+
 
   return (
     <div className='gallery'>
@@ -49,13 +68,10 @@ const Gallery = ({finish,activeIndex}) => {
         <button className='back' onClick={slideBackward}><IoIosArrowBack size={"40px"} fill='grey'/></button>
       </div>
 
-      <SlideItems finish={finish} modelIndex={activeIndex}/>
+      <SlideItems pics={pics}/>
 
       <div className="indicators">
-        <Indicator currentIndex={sliderIndex} myIndex={0}/>
-        <Indicator currentIndex={sliderIndex} myIndex={1}/>
-        <Indicator currentIndex={sliderIndex} myIndex={2}/>
-        <Indicator currentIndex={sliderIndex} myIndex={3}/>
+        {indicators}
       </div>
 
     </div>
