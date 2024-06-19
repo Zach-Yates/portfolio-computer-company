@@ -17,9 +17,9 @@ const Products = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
- const [capacity,setCapacity] = useState(1);
+  const [capacity,setCapacity] = useState(1);
 
- const [helping,setHelping] = useState(false);
+  const [helping,setHelping] = useState(false);
 
   return (
 

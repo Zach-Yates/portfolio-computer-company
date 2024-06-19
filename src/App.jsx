@@ -3,7 +3,8 @@ import './App.css'
 import{BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 
 import Home from './Pages/CompHome.jsx'
-import Products from './Pages/Products.jsx'
+// import Products from './Pages/Products.jsx'
+import Iphone_15 from './Pages/Iphone15.jsx'
 import Services from './Pages/Services.jsx'
 import About from './Pages/CompAbout.jsx'
 import Contact from './Pages/CompContact.jsx'
@@ -16,7 +17,8 @@ function App() {
       <Router>
         <Routes>
           <Route path='/portfolio-computer-company/' exact Component={Home}></Route>
-          <Route path='/comp_products' exact Component={Products}></Route>
+          <Route path='/portfolio-computer-company/15' exact Component={Iphone_15}></Route>
+          {/* <Route path='/comp_products' exact Component={Products}></Route> */}
           <Route path='/comp_services' exact Component={Services}></Route>
           <Route path='/comp_about' exact Component={About}></Route>
           <Route path='/comp_contact' exact Component={Contact}></Route>

@@ -1,15 +1,11 @@
 import React from 'react'
 import './Title.css'
 
-const Title = ({activeIndex,capacity}) => {
+const Title = ({models,activeIndex,capacity}) => {
 
-  let applePrice = 1499;
-  let compCoPrice = 999;
+  let applePrice = parseInt(models[activeIndex].price);
+  let compCoPrice = applePrice - 100;
 
-  if(activeIndex == 1){
-    applePrice +=100;
-    compCoPrice +=100;
-  }
 
   if(capacity == 2){
     applePrice +=100;
@@ -24,7 +20,7 @@ const Title = ({activeIndex,capacity}) => {
   return (
     <div className="title">
 
-        <h2>Buy iPhone 15 Pro</h2>
+        <h2>Buy {models[activeIndex].name}</h2>
 
         <div className="price-compare">
 

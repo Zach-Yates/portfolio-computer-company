@@ -1,45 +1,45 @@
 import React from 'react'
 import './SlideItems.css'
 
-import nt1 from '../../assets/b-nt-1.webp'
-import nt2 from '../../assets/b-nt-2.webp'
-import nt3 from '../../assets/b-nt-3.webp'
-import nt4 from '../../assets/b-nt-4.webp'
+import nt1 from '../../assets/15-pro/b-nt-1.webp'
+import nt2 from '../../assets/15-pro/b-nt-2.webp'
+import nt3 from '../../assets/15-pro/b-nt-3.webp'
+import nt4 from '../../assets/15-pro/b-nt-4.webp'
 
-import bt1 from '../../assets/b-bt-1.webp'
-import bt2 from '../../assets/b-bt-2.webp'
-import bt3 from '../../assets/b-bt-3.webp'
-import bt4 from '../../assets/b-bt-4.webp'
+import bt1 from '../../assets/15-pro/b-bt-1.webp'
+import bt2 from '../../assets/15-pro/b-bt-2.webp'
+import bt3 from '../../assets/15-pro/b-bt-3.webp'
+import bt4 from '../../assets/15-pro/b-bt-4.webp'
 
-import wt1 from '../../assets/b-wt-1.webp'
-import wt2 from '../../assets/b-wt-2.webp'
-import wt3 from '../../assets/b-wt-3.webp'
-import wt4 from '../../assets/b-wt-4.webp'
+import wt1 from '../../assets/15-pro/b-wt-1.webp'
+import wt2 from '../../assets/15-pro/b-wt-2.webp'
+import wt3 from '../../assets/15-pro/b-wt-3.webp'
+import wt4 from '../../assets/15-pro/b-wt-4.webp'
 
-import blt1 from '../../assets/b-blt-1.webp'
-import blt2 from '../../assets/b-blt-2.webp'
-import blt3 from '../../assets/b-blt-3.webp'
-import blt4 from '../../assets/b-blt-4.webp'
+import blt1 from '../../assets/15-pro/b-blt-1.webp'
+import blt2 from '../../assets/15-pro/b-blt-2.webp'
+import blt3 from '../../assets/15-pro/b-blt-3.webp'
+import blt4 from '../../assets/15-pro/b-blt-4.webp'
 
-import mnt1 from '../../assets/m-nt-1.webp'
-import mnt2 from '../../assets/m-nt-2.webp'
-import mnt3 from '../../assets/m-nt-3.webp'
-import mnt4 from '../../assets/m-nt-4.webp'
+import mnt1 from '../../assets/15-pro/m-nt-1.webp'
+import mnt2 from '../../assets/15-pro/m-nt-2.webp'
+import mnt3 from '../../assets/15-pro/m-nt-3.webp'
+import mnt4 from '../../assets/15-pro/m-nt-4.webp'
 
-import mbt1 from '../../assets/m-bt-1.webp'
-import mbt2 from '../../assets/m-bt-2.webp'
-import mbt3 from '../../assets/m-bt-3.webp'
-import mbt4 from '../../assets/m-bt-4.webp'
+import mbt1 from '../../assets/15-pro/m-bt-1.webp'
+import mbt2 from '../../assets/15-pro/m-bt-2.webp'
+import mbt3 from '../../assets/15-pro/m-bt-3.webp'
+import mbt4 from '../../assets/15-pro/m-bt-4.webp'
 
-import mwt1 from '../../assets/m-wt-1.webp'
-import mwt2 from '../../assets/m-wt-2.webp'
-import mwt3 from '../../assets/m-wt-3.webp'
-import mwt4 from '../../assets/m-wt-4.webp'
+import mwt1 from '../../assets/15-pro/m-wt-1.webp'
+import mwt2 from '../../assets/15-pro/m-wt-2.webp'
+import mwt3 from '../../assets/15-pro/m-wt-3.webp'
+import mwt4 from '../../assets/15-pro/m-wt-4.webp'
 
-import mblt1 from '../../assets/m-blt-1.webp'
-import mblt2 from '../../assets/m-blt-2.webp'
-import mblt3 from '../../assets/m-blt-3.webp'
-import mblt4 from '../../assets/m-blt-4.webp'
+import mblt1 from '../../assets/15-pro/m-blt-1.webp'
+import mblt2 from '../../assets/15-pro/m-blt-2.webp'
+import mblt3 from '../../assets/15-pro/m-blt-3.webp'
+import mblt4 from '../../assets/15-pro/m-blt-4.webp'
 
 const images = [
     {
@@ -84,11 +84,13 @@ const images = [
         image4: mblt4}
   ]
 
-const SlideItems = ({finish,activeIndex}) => {
+const SlideItems = ({finish,modelIndex}) => {
 
     let pics = [];
 
-    if(activeIndex == 0){
+    // console.log(images.length);
+
+    if(modelIndex == 0){
         if (finish == "Natural Titanium"){
             pics = images[0];
         }
@@ -102,7 +104,7 @@ const SlideItems = ({finish,activeIndex}) => {
             pics = images[3];
         }
     }
-    else if(activeIndex ==1){
+    else if(modelIndex ==1){
         if (finish == "Natural Titanium"){
             pics = images[4];
         }

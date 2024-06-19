@@ -49,7 +49,7 @@ const Gallery = ({finish,activeIndex}) => {
         <button className='back' onClick={slideBackward}><IoIosArrowBack size={"40px"} fill='grey'/></button>
       </div>
 
-      <SlideItems finish={finish} activeIndex={activeIndex}/>
+      <SlideItems finish={finish} modelIndex={activeIndex}/>
 
       <div className="indicators">
         <Indicator currentIndex={sliderIndex} myIndex={0}/>

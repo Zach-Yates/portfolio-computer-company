@@ -3,22 +3,26 @@ import './Model.css'
 import { CiCirclePlus } from "react-icons/ci";
 import ModelButton from '../ModelButton/ModelButton';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import { IconContext } from 'react-icons';
 
 
-const Model = ({activeIndex,setActiveIndex,setHelping}) => {
+const Model = ({models,activeIndex,setActiveIndex,setHelping}) => {
 
   const HandleClick =()=>{
     setHelping(true);
   }
 
+
+if(models.length > 1){
   return (
     <div className='model'>
       
       <SectionTitle main={"Model. "} sub={"Which is best for you?"}/>
 
-      <ModelButton isActive={activeIndex === 0} model={"iPhone 15 Pro"} display={"6.1-inch display'"} click={()=>setActiveIndex(0)}/>
-      <ModelButton isActive={activeIndex === 1} model={"iPhone 15 Pro Max"} display={"6.7-inch display'"} click={()=>setActiveIndex(1)}/>
+      { models.length > 1 &&
+        models.map(model=>(
+        <ModelButton isActive={activeIndex === parseInt(model.index)} model={model.name} display={model.display} key={model.id} click={()=>setActiveIndex(parseInt(model.index))}/>
+        ))
+      }
 
       <div className='button-container'>
           <button className='help-button' onClick={HandleClick}>
@@ -34,6 +38,8 @@ const Model = ({activeIndex,setActiveIndex,setHelping}) => {
 
     </div>
   )
+}
+
 }
 
 export default Model

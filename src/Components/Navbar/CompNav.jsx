@@ -22,7 +22,7 @@ const CompNav = () => {
 
         <Link to="/portfolio-computer-company/"><div className='home'>CompCo Home</div></Link>
         <ul className={`menu ${showMenu? '':'hide-menu'}`}>
-            <Link to="/comp_products"><li><span>Products</span></li></Link>
+            <Link to="/portfolio-computer-company/15"><li><span>iPhone 15</span></li></Link>
             <Link to="/comp_services"><li>Services</li></Link>
             <Link to="/comp_about"><li>About</li></Link>
             <Link to="/comp_contact"><li>Contact</li></Link>
