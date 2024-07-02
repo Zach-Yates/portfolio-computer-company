@@ -8,7 +8,7 @@ const CompAbout = () => {
     <div className='comp-about'>
       <CompNav/>
       <div className="comp-about-main">
-        <p className='top'>CompCo has been locally owned and operated in Northwest Arkansas since 1985.  
+        <p className='top'>iPhones 4 Less has been locally owned and operated in Northwest Arkansas since 1985.  
         With three full-time salespersons, 
         four full-time certified repair technicians and a full-time office manager in addition to three-part time staff members, 
         we are prepared to handle all your business-related as well as personal Apple retail,  repair and training needs.  

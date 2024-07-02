@@ -1,26 +1,17 @@
-.comp-home{
+.home-main .title{
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-.home-main{
-    /* background: blue; */
+.home-main .iphones{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
-}
-
-.home-main img{
-    height: 392px;
-    width: 960px;
-}
-
-.home-main h2{
-    font-family: 600;
-    font-size: 2rem;
-}
-
-.home-main h3{
-    font-weight: 200;
-    text-transform: uppercase;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    margin-bottom: 350px;
 }

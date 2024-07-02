@@ -34,7 +34,7 @@ const Title = ({models,activeIndex,capacity}) => {
 
             <div className="price-item">
 
-                <p className='compco'>Compco</p>
+                <p className='compco'>iPhones 4 Less</p>
 
                 <p>${compCoPrice}</p>
 

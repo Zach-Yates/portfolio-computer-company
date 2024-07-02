@@ -40,7 +40,7 @@ const Product = ({phone}) => {
 
         </div>
       </div>
-      <Help helping={helping} setHelping={setHelping}/>
+      <Help info={phone.help} helping={helping} setHelping={setHelping}/>
     </div>
   )
 }

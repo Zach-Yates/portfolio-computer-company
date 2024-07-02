@@ -10,7 +10,6 @@ import Iphone_14 from './Pages/Iphone14.jsx'
 import Iphone_13 from './Pages/Iphone13.jsx'
 import Iphone_SE from './Pages/IphoneSE.jsx'
 
-import Services from './Pages/Services.jsx'
 import About from './Pages/CompAbout.jsx'
 import Contact from './Pages/CompContact.jsx'
 
@@ -29,9 +28,9 @@ function App() {
           <Route path='/portfolio-computer-company/13' exact Component={Iphone_13}></Route>
           <Route path='/portfolio-computer-company/SE' exact Component={Iphone_SE}></Route>
 
-          <Route path='/comp_services' exact Component={Services}></Route>
           <Route path='/comp_about' exact Component={About}></Route>
           <Route path='/comp_contact' exact Component={Contact}></Route>
+          
       </Routes>
     </Router>
     </>

@@ -1,104 +1,118 @@
 export const phones = {
     0:{
-    title: "15 Pro",
-    models: [
-        {
-            id: 0,
-            name: "iPhone 15 Pro",
-            display: "6.1-inch display",
-            price: "999",
-            index: "0"
-        },
-        {
-            id: 1,
-            name: "iPhone 15 Pro Max",
-            display: "6.7-inch display",
-            price: "$1199",
-            index: "1"
+        id:0,
+        title: "iPhone 15 Pro",
+        description: "The ultimate iPhone.",
+        homeImage: "./src/assets/main-15pro.png",
+        link: "/portfolio-computer-company/15Pro",
+        models: [
+            {
+                id: 0,
+                name: "iPhone 15 Pro",
+                display: "6.1-inch display",
+                price: "999",
+                index: "0"
+            },
+            {
+                id: 1,
+                name: "iPhone 15 Pro Max",
+                display: "6.7-inch display",
+                price: "$1199",
+                index: "1"
+            }
+        ],
+        finishes: [
+            {
+                name:"NATURAL TITANIUM",
+                location: "./src/assets/titanium.jpeg",
+                index: "0",
+                imageIndexes:[0,1]
+            },
+            {
+                name:"BLUE TITANIUM",
+                location: "./src/assets/blue-titanium.jpeg",
+                index: "1",
+                imageIndexes:[2,3]
+            },
+            {
+                name:"WHITE TITANIUM",
+                location: "./src/assets/white-titanium.jpeg",
+                index: "2",
+                imageIndexes:[4,5]
+            },
+            {
+                name:"BLACK TITANIUM",
+                location: "./src/assets/black-titanium.jpeg",
+                index: "3",
+                imageIndexes:[6,7]
+            }
+        ],
+        images: [
+            {
+                image1: "./src/assets/15-pro/b-nt-1.webp",
+                image2: "./src/assets/15-pro/b-nt-2.webp",
+                image3: "./src/assets/15-pro/b-nt-3.webp",
+                image4: "./src/assets/15-pro/b-nt-4.webp"
+            },
+            {
+                image1: "./src/assets/15-pro/m-nt-1.webp",
+                image2: "./src/assets/15-pro/m-nt-2.webp",
+                image3: "./src/assets/15-pro/m-nt-3.webp",
+                image4: "./src/assets/15-pro/m-nt-4.webp"
+            },
+
+            {
+                image1: "./src/assets/15-pro/b-bt-1.webp",
+                image2: "./src/assets/15-pro/b-bt-2.webp",
+                image3: "./src/assets/15-pro/b-bt-3.webp",
+                image4: "./src/assets/15-pro/b-bt-4.webp"
+            },
+            {
+                image1: "./src/assets/15-pro/m-bt-1.webp",
+                image2: "./src/assets/15-pro/m-bt-2.webp",
+                image3: "./src/assets/15-pro/m-bt-3.webp",
+                image4: "./src/assets/15-pro/m-bt-4.webp"
+            },
+
+            {
+                image1: "./src/assets/15-pro/b-wt-1.webp",
+                image2: "./src/assets/15-pro/b-wt-2.webp",
+                image3: "./src/assets/15-pro/b-wt-3.webp",
+                image4: "./src/assets/15-pro/b-wt-4.webp"
+            },
+            {
+                image1: "./src/assets/15-pro/m-wt-1.webp",
+                image2: "./src/assets/15-pro/m-wt-2.webp",
+                image3: "./src/assets/15-pro/m-wt-3.webp",
+                image4: "./src/assets/15-pro/m-wt-4.webp"
+            },
+
+            {
+                image1: "./src/assets/15-pro/b-blt-1.webp",
+                image2: "./src/assets/15-pro/b-blt-2.webp",
+                image3: "./src/assets/15-pro/b-blt-3.webp",
+                image4: "./src/assets/15-pro/b-blt-4.webp"
+            },
+            {
+                image1: "./src/assets/15-pro/m-blt-1.webp",
+                image2: "./src/assets/15-pro/m-blt-2.webp",
+                image3: "./src/assets/15-pro/m-blt-3.webp",
+                image4: "./src/assets/15-pro/m-blt-4.webp"
+            },
+        ],
+        help: {
+            images: ["./src/assets/compare-base.jpeg","./src/assets/compare-max.jpeg"],
+            captions: ["iPhone 15 Pro", "iPhone 15Pro Max"],
+            desc: "iPhone 15 Pro and iPhone 15 Pro Max share the same powerful innovations, like the all-new, strong and light titanium design. Super-high-resolution photos with the 48MP Main camera. A17 Pro, a game-changing chip with groundbreaking performance. A customizable Action button. And a USB-C connector with support for USB 3 speeds.",
+            statements: ["iPhone 15 Pro has a 6.1-inch display Footnote and a 3x Telephoto camera and gets up to 23 hours video playback.","iPhone 15 Pro Max has a 6.7-inch display Footnote and a 5x Telephoto camera and gets up to 29 hours video playback."]
         }
-    ],
-    finishes: [
-        {
-            name:"NATURAL TITANIUM",
-            location: "./src/assets/titanium.jpeg",
-            index: "0",
-            imageIndexes:[0,1]
-        },
-        {
-            name:"BLUE TITANIUM",
-            location: "./src/assets/blue-titanium.jpeg",
-            index: "1",
-            imageIndexes:[2,3]
-        },
-        {
-            name:"WHITE TITANIUM",
-            location: "./src/assets/white-titanium.jpeg",
-            index: "2",
-            imageIndexes:[4,5]
-        },
-        {
-            name:"BLACK TITANIUM",
-            location: "./src/assets/black-titanium.jpeg",
-            index: "3",
-            imageIndexes:[6,7]
-        }
-    ],
-    images: [
-        {
-            image1: "./src/assets/15-pro/b-nt-1.webp",
-            image2: "./src/assets/15-pro/b-nt-2.webp",
-            image3: "./src/assets/15-pro/b-nt-3.webp",
-            image4: "./src/assets/15-pro/b-nt-4.webp"
-        },
-        {
-            image1: "./src/assets/15-pro/m-nt-1.webp",
-            image2: "./src/assets/15-pro/m-nt-2.webp",
-            image3: "./src/assets/15-pro/m-nt-3.webp",
-            image4: "./src/assets/15-pro/m-nt-4.webp"
-        },
-
-        {
-            image1: "./src/assets/15-pro/b-bt-1.webp",
-            image2: "./src/assets/15-pro/b-bt-2.webp",
-            image3: "./src/assets/15-pro/b-bt-3.webp",
-            image4: "./src/assets/15-pro/b-bt-4.webp"
-        },
-        {
-            image1: "./src/assets/15-pro/m-bt-1.webp",
-            image2: "./src/assets/15-pro/m-bt-2.webp",
-            image3: "./src/assets/15-pro/m-bt-3.webp",
-            image4: "./src/assets/15-pro/m-bt-4.webp"
-        },
-
-        {
-            image1: "./src/assets/15-pro/b-wt-1.webp",
-            image2: "./src/assets/15-pro/b-wt-2.webp",
-            image3: "./src/assets/15-pro/b-wt-3.webp",
-            image4: "./src/assets/15-pro/b-wt-4.webp"
-        },
-        {
-            image1: "./src/assets/15-pro/m-wt-1.webp",
-            image2: "./src/assets/15-pro/m-wt-2.webp",
-            image3: "./src/assets/15-pro/m-wt-3.webp",
-            image4: "./src/assets/15-pro/m-wt-4.webp"
-        },
-
-        {
-            image1: "./src/assets/15-pro/b-blt-1.webp",
-            image2: "./src/assets/15-pro/b-blt-2.webp",
-            image3: "./src/assets/15-pro/b-blt-3.webp",
-            image4: "./src/assets/15-pro/b-blt-4.webp"
-        },
-        {
-            image1: "./src/assets/15-pro/m-blt-1.webp",
-            image2: "./src/assets/15-pro/m-blt-2.webp",
-            image3: "./src/assets/15-pro/m-blt-3.webp",
-            image4: "./src/assets/15-pro/m-blt-4.webp"
-        },
-    ]
     },
     1:{
-        title: "15",
+        id:1,
+        title: "iPhone 15",
+        description: "A total powerhouse.",
+        homeImage: "./src/assets/main-15.png",
+        link: "/portfolio-computer-company/15",
         models: [
             {
                 id: 0,
@@ -207,10 +221,20 @@ export const phones = {
                 image2: "./src/assets/15/15p-bl2.webp",
                 image3: "./src/assets/15/15p-bl3.webp",
             },
-        ]
+        ],
+        help: {
+            images: ["./src/assets/compare-15.jpeg","./src/assets/compare-15plus.jpeg"],
+            captions: ["iPhone 15", "iPhone 15 Plus"],
+            desc: "iPhone 15 and iPhone 15 Plus share the same powerful innovations, like Dynamic Island. An all-new 48MP Main camera enables super-high-resolution photos and 2x Telephoto. Durable colour-infused back glass and aluminium design. USB-C to conveniently connect and charge. And the powerhouse A16 Bionic chip.",
+            statements: ["iPhone 15 has a 6.1-inch display and gets up to 20 hours video playback.","iPhone 15 Plus has a 6.7-inch display and gets up to 26 hours video playback."]
+        }
     },
     2:{
-        title: "14",
+        id:2,
+        title: "iPhone 14",
+        description: "As amasing as ever.",
+        homeImage: "./src/assets/main-14.png",
+        link: "/portfolio-computer-company/14",
         models: [
             {
                 id: 0,
@@ -337,10 +361,20 @@ export const phones = {
                 image2: "./src/assets/14/14p-r2.webp",
                 image3: "./src/assets/14/14p-r3.webp",
             },
-        ]
+        ],
+        help: {
+            images: ["./src/assets/compare-14.jpeg","./src/assets/compare-14plus.jpeg"],
+            captions: ["iPhone 14", "iPhone 14 Plus"],
+            desc: "iPhone 14 and iPhone 14 Plus share the same fantastic innovations, like a Pro-level camera, a durable design with Ceramic Shield, vital safety features,³ and our lightning-fast A15 Bionic chip with 5-core GPU.",
+            statements: ["iPhone 14 has a 6.1-inch display¹ and gets up to 20 hours video playback.","iPhone 14 Plus has a 6.7-inch display¹ and gets up to 26 hours video playback."]
+        }
     },
     3:{
-        title: "13",
+        id:3,
+        title: "iPhone 13",
+        description: "All kinds of awesome.",
+        homeImage: "./src/assets/main-13.png",
+        link: "/portfolio-computer-company/13",
         models: [
             {
                 id: 0,
@@ -433,7 +467,11 @@ export const phones = {
         ]
     },
     4:{
-        title: "SE",
+        id:4,
+        title: "iPhone SE",
+        description: "Serious Power. Serious Value",
+        homeImage: "./src/assets/main-se.png",
+        link: "/portfolio-computer-company/se",
         models: [
             {
                 id: 0,

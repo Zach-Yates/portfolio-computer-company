@@ -1,0 +1,56 @@
+.iphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid rgb(234, 234, 234);
+    border-radius: 18px;
+    box-shadow: 1px 1px rgba(0, 0, 0, .1);
+    width: 250px;
+    height: 550px;
+    flex-shrink: 0;
+}
+
+.iphone .phone-img{
+    height: auto;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+.iphone-finish{
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px;
+}
+
+.iphone span{
+    margin-bottom: 10px;
+}
+
+.iphone .name{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.iphone .description{
+    font-weight: 200;
+}
+
+.iphone .price{
+    margin-bottom: 20px;
+}
+
+
+.iphone button{
+    position: sticky;
+    cursor: pointer;
+    width: 75px;
+    height: 35px;
+    background: rgb(67, 117, 255);
+    color:white;
+    border-radius: 100px;
+}
+
+.iphone button:hover{
+    background: rgb(80, 126, 253);
+}

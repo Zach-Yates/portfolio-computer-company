@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .comp-contact-main h1{
@@ -75,10 +76,14 @@
 }
 
 .comp-contact-form button{
-    width: 150px;
-    height: 75px;
+    width: 125px;
+    height: 50px;
     background: white;
 
     font-size: 1.5rem;
+
+    border-radius: 0px;
+    border: solid  var(--bgcolor);
+    cursor: pointer;
 }
 

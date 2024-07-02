@@ -5,7 +5,7 @@ const CompFooter = () => {
   return (
     <div className='comp-footer'>
       <p>479-867-5309 | 2024 55th Ave. Suite 12, Rogers, AR 72758</p>
-      <p>Copyright © {new Date().getFullYear()} CompCo. All Rights Reserved.</p>
+      <p>Copyright © {new Date().getFullYear()} iPhones 4 Less. All Rights Reserved.</p>
     </div>
   )
 }
