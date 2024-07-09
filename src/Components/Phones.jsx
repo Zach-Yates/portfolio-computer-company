@@ -3,7 +3,8 @@ export const phones = {
         id:0,
         title: "iPhone 15 Pro",
         description: "The ultimate iPhone.",
-        homeImage: "./src/assets/main-15pro.png",
+        homeImage: "src/assets/main-15pro.png",
+        // homeImage: "./src/assets/main-15pro.png",
         link: "/portfolio-computer-company/15Pro",
         models: [
             {

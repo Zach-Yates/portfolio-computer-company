@@ -2,16 +2,16 @@ import React from 'react'
 import './Iphone.css'
 import { Link } from 'react-router-dom'
 
-
 const Iphone = ({phone}) => {
 
     const finishes = phone.finishes.map((finish,i)=>
     <img className='iphone-finish' src={import.meta.env.BASE_URL + finish.location} key={i}></img>
     )
+    console.log(import.meta.env.BASE_URL);
 
   return (
     <div className='iphone'>
-        <img className='phone-img' src={phone.homeImage}/>
+        <img className='phone-img' src={import.meta.env.BASE_URL + phone.homeImage}/>
         <ul>
             {finishes}
         </ul>
