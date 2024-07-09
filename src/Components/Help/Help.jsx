@@ -11,8 +11,9 @@ const Help = ({info,helping,setHelping}) => {
         }
     }
 
+    var size = Object.keys(info).length;
 
-    if(info.length > 0){
+    if(size > 0){
       return (
         <div className={`help ${helping? '':'hide'}`} onClick={ClosePanel} ref={panel}>
     
