@@ -18,7 +18,7 @@ const CompHome = () => {
 
       <div className='title'>
 
-        <span className='titl'>Explore the lineup.</span>
+        <span className='titl'>Explore the lineup.1</span>
       </div>
 
         <div className="iphones">
