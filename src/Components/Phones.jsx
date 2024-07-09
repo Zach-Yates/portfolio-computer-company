@@ -464,7 +464,8 @@ export const phones = {
                 image2: "./src/assets/13/13r2.webp",
                 image3: "./src/assets/13/13r3.webp",
             },
-        ]
+        ],
+        help:{},
     },
     4:{
         id:4,
@@ -522,6 +523,7 @@ export const phones = {
                 image2: "./src/assets/se/ser2.webp",
                 image3: "./src/assets/se/ser3.webp",
             }
-        ]
+        ],
+        help:{},
         },
 }

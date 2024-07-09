@@ -20,6 +20,8 @@ const Product = ({phone}) => {
 
   const [helping,setHelping] = useState(false);
 
+  // help is breaking pages without model components
+
   return (
 
     <div className='comp-products'>
