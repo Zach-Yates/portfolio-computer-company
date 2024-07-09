@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Iphone = ({phone}) => {
 
     const finishes = phone.finishes.map((finish,i)=>
-    <img className='iphone-finish' src={finish.location} key={i}></img>
+    <img className='iphone-finish' src={import.meta.env.BASE_URL + finish.location} key={i}></img>
     )
 
   return (
